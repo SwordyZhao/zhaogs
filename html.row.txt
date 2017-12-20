@@ -32,4 +32,3 @@ var MyMar3=setInterval(Marquee3,speed)
 colee_left.onmouseover=function() {clearInterval(MyMar3)}
 colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
 </script>
-</body>
