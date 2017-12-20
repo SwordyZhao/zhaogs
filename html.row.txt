@@ -1,0 +1,35 @@
+<!--图片向左滚动-->
+<div id="colee_left" style="overflow:hidden;width:500px;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td id="colee_left1" valign="top" align="center">
+<table cellpadding="2" cellspacing="0" border="0">
+<tr align="center">
+<!--girl1.html为要点击该图片要跳转的页面超链接，images/i.jpg 为图片的保存路径,每一行为一个要滚动展示的图片-->
+<td><p><a href=girl1.html><img src="images/i.jpg" height="102" width="198" ></a></p></td>
+<td><p><a href=girl1.html><img src="images/j.jpg" height="102" width="198" ></a></p></td>
+</tr>
+</table>
+</td>
+<td id="colee_left2" valign="top"></td>
+</tr>
+</table>
+</div>
+<script>
+//使用div时，请保证colee_left2与colee_left1是在同一行上.
+var speed=30//速度数值越大速度越慢
+var colee_left2=document.getElementById("colee_left2");
+var colee_left1=document.getElementById("colee_left1");
+var colee_left=document.getElementById("colee_left");
+colee_left2.innerHTML=colee_left1.innerHTML
+function Marquee3(){
+if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+else{
+colee_left.scrollLeft++
+}
+}
+var MyMar3=setInterval(Marquee3,speed)
+colee_left.onmouseover=function() {clearInterval(MyMar3)}
+colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+</script>
+</body>
