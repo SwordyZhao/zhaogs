@@ -31,11 +31,11 @@
 export JAVA_HOME=/opt/java
 export SCALA_HOME=/opt/scala
 export HADOOP_HOME=/opt/hadoop
-export HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop     _hadoop的配置文件路徑_
-export SPARK_MASTER_IP=192.168.1.1      *Master節點的ip地址*
-export SPARK_WORKER_MEMORY=2g       *worker節點可以分配的最大的內存*
-export SPARK_WORKER_CORES=2       *worker節點可以分配的最大核心數*
-export SPARK_WORKER_INSTANCES=1   *每臺機器上開啟的Worker節點的數目*
+export HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop     //hadoop的配置文件路徑
+export SPARK_MASTER_IP=192.168.1.1                //Master節點的ip地址
+export SPARK_WORKER_MEMORY=2g                     //worker節點可以分配的最大的內存
+export SPARK_WORKER_CORES=2                       //worker節點可以分配的最大核心數
+export SPARK_WORKER_INSTANCES=1                   //每臺機器上開啟的Worker節點的數目
 ```
  啟動集群：
   
