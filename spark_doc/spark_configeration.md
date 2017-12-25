@@ -1,15 +1,16 @@
 # Spark 安裝配置
  
-## 1.安裝Scalaj
+## 1.安裝Scala
  
  解壓安裝包；
  
 在環境變量中添加如下：
 
-'''
+```
+
   export SCALA_HOME=/opt/scala
   export PATH=$SCALA_HOME/bin:$PATH
-''' 
+```
  
  測試是否安裝成功：
  
@@ -18,13 +19,13 @@
 ## 2.安裝spark：
  
 解壓安裝包；
- 
-在 環境變量中田間如下：
 
-'''
+在環境變量中田間如下：
+
+```
   export SCALA_HOME=/opt/spark
   export PATH=$SPARK_HOME/bin:$PATH
-''' 
+```
  
 修改spark-env.sh文件：
 ```
