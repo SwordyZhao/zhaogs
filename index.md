@@ -1,6 +1,6 @@
 # spark
  
-### [spark_configeration](spark/spark_configeration.md)
+### [spark_configeration](spark_doc/spark_configeration.md)
  
 
 
